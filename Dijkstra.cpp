@@ -21,6 +21,16 @@ class Dijkstra {
    	 	costMatrix = new int*[19];
    	 	for(int i = 0; i < 19; ++i)
    	 		costMatrix[i] = new int[19]();
+   	 	bestCostArray = new int[amntOfNodes];
+   	 	markedArray   = new int[amntOfNodes];
+   	 	bestCostArray = new int[amntOfNodes];
+   	 	sourceNode = 1;
+
+   	 	for(int i = 0; i < amntOfNodes; ++i) {
+   	 		bestCostArray[i] = 9999;
+   	 		markedArray[i] = 0;
+   	 		bestCostArray[i] = i;
+   	 	}
    	 }
 
       void loadCostMatrix(ifstream& readFromFile) {
@@ -38,6 +48,10 @@ class Dijkstra {
       				cout << row << " " << col << " " << costMatrix[row][col] << endl;
       		}
       	}
+      }
+
+      void loadBestCostArray(int srcNode) {
+      	
       }    	
 };
 
