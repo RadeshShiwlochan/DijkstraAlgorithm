@@ -51,6 +51,9 @@ class Dijkstra {
       }
 
       void loadBestCostArray(int srcNode) {
+        //how to load the best cost matrix
+        //find all the nodes that a node connects to 
+        //load the value into the array 
       	
       }    	
 };
